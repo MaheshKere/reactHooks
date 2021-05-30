@@ -9,8 +9,8 @@ export const UseEffect =()=>{
     useEffect(()=>{
         console.log('render') 
         localStorage.setItem("count",JSON.stringify(count))
-        return ()=> console.log('Un-Mount')
-    
+        return ()=> console.log('Un-Mount') 
+     
     },[]) 
     const [showHello, setHelloState]=useState(true)
     const [count2 ,increMentCount]=useState({count2:10})
